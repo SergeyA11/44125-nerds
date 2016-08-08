@@ -30,53 +30,49 @@
           <a class="login" href="#">КОРЗИНА</a>
         </div>
        </div>
+         <h2 class="page-title">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h2>
       </header>
       <main class="container">
-        <h2 class="page-title">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h2>
-        <article class="filters">
-          <section class="price">
-            <h3 class="sub-title">СТОИМОСТЬ:</h3>
-            <form action="#" method="post">
+        <section class="filters"> 
+          <form action="#"  method="post">
+            <section class="price">
+              <h3 class="sub-title">СТОИМОСТЬ:</h3>
               <input type="range" min="0" max="15000" step="1">
               <output name="sum"></output>
-            </form>
-          </section>
-          <section class="mesh">
-            <h3 class="sub-title">CЕТКА:</h3>
-            <form action="#" method="post">
-            <label for="adapt">
-                <input id="adapt" type="radio" name="mesh-type" value="Адаптивная" checked> Адаптивная
-            </label>
-            <label for="fix">
-                <input id="fix" type="radio" name="mesh-type" value="Фиксированная" >Фиксированная
-            </label>
-            <label for="rubber">
-                <input id="rubber" type="radio" name="mesh-type" value="Резиновая"> Резиновая
-            </label>
+            </section>
+            <section class="mesh">
+              <h3 class="sub-title">CЕТКА:</h3>
+              <label for="adapt">
+              <input id="adapt" type="radio" name="mesh-type" value="adapt" checked> Адаптивная
+              </label>
+              <label for="fix">
+              <input id="fix" type="radio" name="mesh-type" value="fix" >Фиксированная
+              </label>
+              <label for="rubber">
+              <input id="rubber" type="radio" name="mesh-type" value="rubber"> Резиновая
+              </label>
+            </section>
+            <section class="addition">
+              <h3 class="sub-title">ОСОБЕННОСТИ:</h3>
+              <label for="slider">
+              <input id="slider" type="checkbox" name="slider" checked>Слайдер
+              </label>
+              <label for="advantages">
+              <input id="advantages" type="checkbox" name="advantages"  >Блок преимуществ
+              </label>
+              <label for="news">
+              <input id="news" type="checkbox" name="news" checked>Новости
+              </label>
+              <label for="gallery">
+              <input id="gallery" type="checkbox" name="gallery">Галерея
+              </label>
+              <label for="shopping cart">
+              <input id="shopping cart" type="checkbox" name="shopping cart">Корзина
+              </label>
+            </section>
+            <button type="submit"  class="btn" value="показать">ПОКАЗАТЬ</button>
         </form>
-          </section>
-          <section class="addition">
-            <h3 class="sub-title">ОСОБЕННОСТИ:</h3>
-            <form action="#" method="post">
-            <label for="slider">
-                <input id="slider" type="checkbox" name="slider" value="Слайдер" checked>Слайдер
-            </label>
-            <label for="advantages">
-                <input id="advantages" type="checkbox" name="advantages" value="Блок преимуществ" >Блок преимуществ
-            </label>
-            <label for="news">
-                <input id="news" type="checkbox" name="news" value="Новости" checked>Новости
-            </label>
-            <label for="gallery">
-                <input id="gallery" type="checkbox" name="gallery" value="Галерея">Галерея
-            </label>
-            <label for="shopping cart">
-                <input id="shopping cart" type="checkbox" name="shopping cart" value="Корзина">Корзина
-            </label>
-        </form>
-          </section>
-          <button type="submit"  class="btn" value="показать">ПОКАЗАТЬ</button>
-        </article>
+        </section>
         <article class="cards">
           <section class="sort">
             <h4 class="another-title">сортировать</h4>
@@ -95,9 +91,9 @@
         </article>
         <div class="bottom-navigation">
           <a type="submit" class="btn" href="#">1</a>
-          <a type="submit" class="btn" href="#">2</a>
-          <a type="submit" class="btn" href="#">3</a>
-          <a type="submit" class="btn" href="#">СЛЕДУЮЩАЯ</a>
+          <a class="btn" href="#">2</a>
+          <a class="btn" href="#">3</a>
+          <a class="btn" href="#">СЛЕДУЮЩАЯ</a>
         </div>
       </main>
       <footer class="main-footer">
