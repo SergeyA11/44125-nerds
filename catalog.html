@@ -5,43 +5,43 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-      <header class="main-header">
+    <header class="main-header">
+      <div class="container">
         <div class="index-logo">
-        <img src="http://placehold.it/150x100" alt="Дизайн-студия Nёrd's»">
-      </div>
-          <div class="container">
-            <nav class="main-navigation">
-                   <ul>
-            <li>
-              <a href="#">СТУДИЯ</a>
-            </li>
-            <li>
-              <a href="#">КЛИЕНТЫ</a>
-            </li>
-            <li>
-              <a href="#">МАГАЗИН</a>
-            </li>
-            <li>
-              <a href="#">КОНТАКТЫ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="login" href="#">КОРЗИНА</a>
+          <img src="http://placehold.it/150x100" alt="Дизайн-студия Nёrd's»">
         </div>
-       </div>
-         <h2 class="page-title">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h2>
-      </header>
-      <main class="container">
-        <section class="filters"> 
-          <form action="#"  method="post">
-            <section class="price">
-              <h3 class="sub-title">СТОИМОСТЬ:</h3>
-              <input type="range" min="0" max="15000" step="1">
-              <output name="sum"></output>
-            </section>
-            <section class="mesh">
-              <h3 class="sub-title">CЕТКА:</h3>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">СТУДИЯ</a>
+              </li>
+              <li>
+                <a href="#">КЛИЕНТЫ</a>
+              </li>
+              <li>
+                <a href="#">МАГАЗИН</a>
+              </li>
+              <li>
+                <a href="#">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <a class="login" href="#">КОРЗИНА</a>
+          </div>
+          <h2 class="page-title">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h2>
+      </div>
+    </header>
+    <main class="container">
+      <section class="filters"> 
+        <form action="#"  method="post">
+          <section class="price">
+            <h3 class="sub-title">СТОИМОСТЬ:</h3>
+            <input type="range" min="0" max="15000" step="1">
+            <output name="sum"></output>
+          </section>
+          <section class="mesh">
+            <h3 class="sub-title">CЕТКА:</h3>
               <label for="adapt">
               <input id="adapt" type="radio" name="mesh-type" value="adapt" checked> Адаптивная
               </label>
@@ -70,39 +70,38 @@
               <input id="shopping cart" type="checkbox" name="shopping cart">Корзина
               </label>
             </section>
-            <button type="submit"  class="btn" value="показать">ПОКАЗАТЬ</button>
+            <button type="submit"  class="btn" value="show">ПОКАЗАТЬ</button>
         </form>
         </section>
         <article class="cards">
           <section class="sort">
-            <h4 class="another-title">сортировать</h4>
+            <button type="submit" class="btn">сортировать</button>
             <a href="#">по цене</a>
             <a href="#">по типу</a>
             <a href="#">по функционалу</a>
           </section>
-          <section class="products">
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
+          <section class="product">
+            <div class="product-name"><img src="http://placehold.it/150x100"></div>
+            <a div class="product-name"><img src="http://placehold.it/150x100"></div>
+            <div class="product-name"><img src="http://placehold.it/150x100"></div>
+            <div class="product-name"><img src="http://placehold.it/150x100"></div>
+            <div class="product-name"><img src="http://placehold.it/150x100"></div>
+            <div class="product-name"><img src="http://placehold.it/150x100"></div>
           </section>
         </article>
-        <div class="bottom-navigation">
+        <div class="pagination">
           <a type="submit" class="btn" href="#">1</a>
           <a class="btn" href="#">2</a>
           <a class="btn" href="#">3</a>
           <a class="btn" href="#">СЛЕДУЮЩАЯ</a>
         </div>
-      </main>
-      <footer class="main-footer">
-      <div class="container">
         <section class="maps">
-          <figure class="main-address">
-              <img src="http://placehold.it/150x100" alt="Офис дизайн-студии Nёrd's»>
-            </figure>
-            </section>  
+          <img src="http://placehold.it/150x100" alt="Офис дизайн-студии Nёrd's">
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
         <section class="footer-contacts">
           <p>NERDS DESIGN STUDIO<br>
           191186,Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
