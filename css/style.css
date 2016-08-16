@@ -6,18 +6,125 @@ body {
   font-weight: normal;
   font-family: "Roboto";
 }
-.page-title {
+.first-title {
   font-size: 36px;
   line-height: 36px;
   color: black;
   font-weight: normal;
   font-family: "Roboto";
 }
-.sub-title
-{
+.second-title {
   font-size: 18px;
   line-height: 30px;
   color: black;
   font-weight: normal;
   font-family: "Roboto";
+}
+.container {
+  width: 1200px;
+}
+.main-header {
+  margin-bottom: 80px;
+}
+.index-logo-1 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+}
+.main-navigation {
+  position: relative;
+  display: inline-block;
+  margin-left: 180px;
+  width: 425px;
+  background-color: green;
+  
+}
+.main-navigation ul li {
+  position: relative;
+  display: inline;
+  vertical-align: top;
+  margin-left: 50px;
+}
+.user-block {
+  position: relative;
+  display: inline;
+  vertical-align: top;
+  margin-left: 95px;
+  background-color: green;
+}
+.credo {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+  background-color: green;
+}
+.slider {
+  display: inline-block;
+  vertical-align: top;
+  width: 340px;
+  margin-left: 180px;
+  background-color: green;
+}
+.service-column-1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  margin-right: 80px;
+  background-color: green;
+}
+.service-column-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  margin-right: 80px;
+  background-color: green;
+}
+.service-column-3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  margin-right: 80px;
+  background-color: green;
+}
+.features {
+  display: inline-block;
+  vertical-align: top;
+  width: 573px;
+  margin-right: 69px;
+  margin-top: 165px;
+  background-color: green;
+}
+.secondary-features {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  margin-top: 165px;
+  background-color: green;
+}
+.customers {
+  display: inline-block;
+  vertical-align: top;
+  width: 860px;
+}
+.customer-1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 198px;
+  margin-right: 120px;
+  background-color: green;
+}
+.customer-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 199px;
+  margin-right: 124px;
+  background-color: green;
+}
+.customer-3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 209px;
+  background-color: green;
 }
