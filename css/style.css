@@ -20,111 +20,126 @@ body {
   font-weight: normal;
   font-family: "Roboto";
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 .main-header {
   margin-bottom: 80px;
+  background-color: #eeeeee;
+}
+.line-1 {
+  margin-bottom: 60px;
+  font-size: 0;
+}
+.line-2 {
+  font-size: 0;
 }
 .index-logo-1 {
-  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 140px;
+  margin-right: 180px;
 }
 .main-navigation {
-  position: relative;
   display: inline-block;
-  margin-left: 180px;
-  width: 425px;
+  width: 400px;
+  margin-right: 100px;
+  font-size: 14px;
   background-color: green;
   
 }
 .main-navigation ul li {
-  position: relative;
-  display: inline;
+  display: inline-block;
   vertical-align: top;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 .user-block {
-  position: relative;
   display: inline;
   vertical-align: top;
-  margin-left: 95px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
   background-color: green;
 }
 .credo {
-  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 360px;
+  font-size: 30px;
+  padding-right: 100px;
+  margin-right: 80px;
   background-color: green;
 }
 .slider {
   display: inline-block;
   vertical-align: top;
   width: 340px;
-  margin-left: 180px;
   background-color: green;
 }
-.service-column-1 {
+.service {
+  font-size: 0;
+  margin-bottom: 150px;
+}
+.service-column {
   display: inline-block;
   vertical-align: top;
   width: 240px;
-  margin-right: 80px;
-  background-color: green;
-}
-.service-column-2 {
-  display: inline-block;
-  vertical-align: top;
-  width: 240px;
-  margin-right: 80px;
-  background-color: green;
-}
-.service-column-3 {
-  display: inline-block;
-  vertical-align: top;
-  width: 240px;
+  font-size: 15px;
   margin-right: 80px;
   background-color: green;
 }
 .features {
   display: inline-block;
   vertical-align: top;
-  width: 573px;
-  margin-right: 69px;
-  margin-top: 165px;
+  font-size: 0;
+  margin-bottom: 130px;
+}
+.main-features {
+  font-size: 16px;
+  width: 500px;
+  margin: 0;
   background-color: green;
 }
 .secondary-features {
-  display: inline-block;
-  vertical-align: top;
-  width: 230px;
-  margin-top: 165px;
+  font-size: 16px;
+  width: 500px;
   background-color: green;
 }
-.customers {
+
+.customer {
+  font-size: 0;
+}
+.customer-column-1 {
   display: inline-block;
   vertical-align: top;
-  width: 860px;
+  width: 196px;
+  margin-right: 100px;
+ 
 }
-.customer-1 {
-  display: inline-block;
-  vertical-align: top;
-  width: 198px;
-  margin-right: 120px;
-  background-color: green;
-}
-.customer-2 {
+.customer-column-2 {
   display: inline-block;
   vertical-align: top;
   width: 199px;
-  margin-right: 124px;
-  background-color: green;
+  margin-right: 100px;
+ 
 }
-.customer-3 {
+.customer-column-3 {
   display: inline-block;
   vertical-align: top;
   width: 209px;
-  background-color: green;
+  margin-right: 100px;
+ 
 }
+
+
+
