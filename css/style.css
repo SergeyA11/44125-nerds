@@ -110,18 +110,19 @@ ul {
   margin-bottom: 130px;
 }
 .main-features {
+  display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   width: 500px;
-  margin: 0;
+  margin-right: 150px;
   background-color: green;
 }
 .secondary-features {
+  display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   width: 220px;
   background-color: green;
-  position: relative;
-  top: -220px;
-  right: -650px;
 }
 .customer {
   font-size: 0;
@@ -147,7 +148,7 @@ ul {
   margin-right: 0;
 }
 .map {
-  display: block;
+  display: inline-block;
   background-image: url("img/index-catalog-map.jpg");
 }
 .main-footer {
@@ -155,19 +156,77 @@ ul {
 }
 .footer-social {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
 }
 .friendship {
   display: inline-block;
+  vertical-align: top;
   font-size: 36px;
-  text-align: center;
-  position: relative;
-  right: -100px;
+  margin-left: 120px;
 }
 .discount {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
-  position: relative;
-  right: -315px;
+  margin-left: 335px;
 }
-
+.welcome {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.cards {
+  display: inline-block;
+  vertical-align: top;
+  width: 560px;
+}
+.product-name {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-bottom: 115px;
+}
+.sort {
+  display: inline-block;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+.sort a {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 60px;
+}
+.filters {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  font-size: 0;
+}
+.price {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.mesh {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.mesh ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+}
+.addition {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.pagination {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.pagination a {
+  margin-left: 35px;
+}
