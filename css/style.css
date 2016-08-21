@@ -20,6 +20,23 @@ body {
   font-weight: normal;
   font-family: "Roboto";
 }
+
+.credo p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.result {
+  font-size: 15px;
+  line-height: 22px;
+}
+.origin {
+  font-size: 36px;
+  line-height: 36px;
+}
+.list {
+  font-size: 16px;
+  line-height: 22px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -48,12 +65,14 @@ ul {
   display: inline-block;
   vertical-align: top;
   width: 140px;
+  margin-top: 30px;
   margin-right: 180px;
 }
 .main-navigation {
   display: inline-block;
   width: 400px;
-  margin-right: 100px;
+  margin-top: 60px;
+  margin-right: 50px;
   font-size: 14px;
   background-color: green;
 }
@@ -68,8 +87,9 @@ ul {
 .user-block {
   display: inline;
   vertical-align: top;
+  width: 80px;
   font-size: 14px;
-  margin: 0;
+  margin-left: 60px;
   padding: 0;
   background-color: green;
 }
@@ -77,9 +97,8 @@ ul {
   display: inline-block;
   vertical-align: top;
   width: 360px;
-  font-size: 30px;
-  padding-right: 100px;
   margin-right: 80px;
+  margin-bottom: 80px;
   background-color: green;
 }
 .slider {
@@ -87,6 +106,7 @@ ul {
   vertical-align: top;
   width: 340px;
   background-color: green;
+  margin-bottom: 70px;
 }
 .service {
   font-size: 0;
@@ -124,6 +144,12 @@ ul {
   width: 220px;
   background-color: green;
 }
+.experience {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  text-align: center;
+}
 .customer {
   font-size: 0;
   margin-bottom: 75px;
@@ -148,8 +174,18 @@ ul {
   margin-right: 0;
 }
 .map {
+  position:relative;
   display: inline-block;
   background-image: url("img/index-catalog-map.jpg");
+}
+.contacts {
+  position: absolute;
+  top: 1795px;
+  left: 150px;
+  width: 250px;
+  height: 240px;
+  background-color: #ffffff;
+  text-align: center;
 }
 .main-footer {
   font-size: 0;
@@ -158,49 +194,55 @@ ul {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
+  margin-top: 50px;
+}
+.cooperation {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 330px;
+  margin-bottom: 100px;
 }
 .friendship {
-  display: inline-block;
-  vertical-align: top;
   font-size: 36px;
-  margin-left: 120px;
+  padding-right: 50px;
 }
 .discount {
-  display: inline-block;
-  vertical-align: top;
   font-size: 16px;
-  margin-left: 335px;
 }
 .welcome {
   display: inline-block;
   vertical-align: top;
-  text-align: center;
+  margin-left: 300px;
+  margin-bottom: 95px;
 }
 .cards {
   display: inline-block;
   vertical-align: top;
   width: 560px;
+  font-size: 0;
 }
 .product-name {
   display: inline-block;
   vertical-align: top;
   margin-right: 30px;
-  margin-bottom: 115px;
+  margin-bottom: 80px;
 }
 .sort {
   display: inline-block;
-  margin-right: 60px;
   margin-bottom: 30px;
+  font-size: 12px;
 }
 .sort a {
   display: inline-block;
   vertical-align: top;
-  margin-right: 60px;
+  margin-right: 45px;
+  font-size: 12px;
 }
 .filters {
   display: inline-block;
   vertical-align: top;
-  width: 250px;
+  width: 210px;
+  margin-right: 80px;
   font-size: 0;
 }
 .price {
@@ -222,6 +264,7 @@ ul {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
+  margin-bottom: 70px;
 }
 .pagination {
   margin-bottom: 100px;
@@ -229,4 +272,33 @@ ul {
 }
 .pagination a {
   margin-left: 35px;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+  text-align: center;
+  background-color: red;
+}
+.btn-order {
+  width: 140px;
+  height: 38px;
+}
+.btn-learn-more {
+  width: 240px;
+  height: 38px;
+}
+.btn-write-to-us {
+  width: 240px;
+  height: 38px;
+}
+.studio-name {
+  font-size: 16px;
+  line-height: 30px;
+}
+.address {
+  font-size: 16px;
+  line-height: 20px;
 }
