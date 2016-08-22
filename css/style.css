@@ -6,6 +6,46 @@ body {
   font-weight: normal;
   font-family: "Roboto";
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-nerds";
+  src: url("../fonts/symbols-nerds.woff") format("woff"),
+       url("../fonts/symbols-nerds.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-nerds";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-basket::before { content: "\62"; } /* "b" */
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-vk::before { content: "\76"; } /* "v" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-circle::before { content: "\25cb"; } /* "○" */
+.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+
 .first-title {
   font-size: 36px;
   line-height: 36px;
@@ -174,9 +214,9 @@ ul {
   margin-right: 0;
 }
 .map {
-  position:relative;
   display: inline-block;
   background-image: url("img/index-catalog-map.jpg");
+  width: 100%;
 }
 .contacts {
   position: absolute;
@@ -267,11 +307,20 @@ ul {
   margin-bottom: 70px;
 }
 .pagination {
+  font-size: 0;
   margin-bottom: 100px;
-  text-align: center;
+  margin-left: 300px;
+  display: inline-block;
+  min-width: 285px;
 }
 .pagination a {
-  margin-left: 35px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 15px;
+  background-color: #ffffff;
 }
 .btn {
   display: inline-block;
@@ -280,19 +329,18 @@ ul {
   line-height: 18px;
   color: white;
   text-align: center;
-  background-color: red;
+  padding-top: 10px;
+  height: 28px;
+  text-decoration: none;
 }
 .btn-order {
   width: 140px;
-  height: 38px;
 }
 .btn-learn-more {
   width: 240px;
-  height: 38px;
 }
 .btn-write-to-us {
   width: 240px;
-  height: 38px;
 }
 .studio-name {
   font-size: 16px;
@@ -301,4 +349,49 @@ ul {
 .address {
   font-size: 16px;
   line-height: 20px;
+}
+.sprite {
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+.sprite-icon-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -30px -30px;
+}
+.sprite-icon-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -30px -112px;
+}
+.sprite-icon-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -30px -193px;
+}
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  background-color: #e1e1e1;
+}
+.social-btn-vk::before {
+    width: 26px;
+    height: 15px;
+    background-position: -30px -193px;
+}
+.social-btn-f::before {
+    width: 12px;
+    height: 22px;
+    background-position: -30px -30px;
+}
+.social-btn-inst::before {
+    width: 21px;
+    height: 21px;
+    background-position: -30px -112px;
 }
