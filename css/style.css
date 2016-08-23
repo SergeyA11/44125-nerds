@@ -1,10 +1,10 @@
 style.css
 body {
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 22px;
   color: black;
   font-weight: normal;
-  font-family: "Roboto";
 }
 .first-title {
   font-size: 36px;
@@ -20,12 +20,12 @@ body {
   font-weight: normal;
   font-family: "Roboto";
 }
-
 .credo p {
   font-size: 16px;
   line-height: 22px;
 }
 .result {
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 22px;
 }
@@ -72,14 +72,18 @@ ul {
   display: inline-block;
   width: 400px;
   margin-top: 60px;
-  margin-right: 50px;
-  font-size: 14px;
-  background-color: green;
+  margin-right: 70px;
 }
 .main-navigation ul li {
   display: inline-block;
   vertical-align: top;
-  margin-right: 50px;
+  margin-right: 45px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 30px;
+}
+.main-navigation ul li a {
+  text-decoration: none;
 }
 .main-navigation ul li:last-child {
   margin-right: 0;
@@ -88,24 +92,35 @@ ul {
   display: inline;
   vertical-align: top;
   width: 80px;
-  font-size: 14px;
-  margin-left: 60px;
   padding: 0;
-  background-color: green;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 30px;
+}
+.user-block a {
+  text-decoration: none;
+}
+ {
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent url("img/icon-basket.png") no-repeat;
+  width: 15px;
+  height: 15px;
 }
 .credo {
   display: inline-block;
   vertical-align: top;
   width: 360px;
-  margin-right: 80px;
+  margin-right: 180px;
   margin-bottom: 80px;
-  background-color: green;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
 }
 .slider {
   display: inline-block;
   vertical-align: top;
   width: 340px;
-  background-color: green;
   margin-bottom: 70px;
 }
 .service {
@@ -118,10 +133,15 @@ ul {
   width: 240px;
   font-size: 15px;
   margin-right: 80px;
-  background-color: green;
 }
 .service-column:last-child {
   margin-right: 0;
+}
+.service-column:nth-child(2) .btn-order {
+  background-color: #00ca74;
+}
+.service-column:nth-child(3) .btn-order {
+  background-color: #efc84a;
 }
 .features {
   display: inline-block;
@@ -132,43 +152,58 @@ ul {
 .main-features {
   display: inline-block;
   vertical-align: top;
+  font-family: Roboto;
   font-size: 16px;
-  width: 500px;
-  margin-right: 150px;
-  background-color: green;
+  line-height: 22px;
+  width: 575px;
+  margin-right: 65px;
+}
+.origin {
+  font-family: "Roboto";
+  font-size: 36px;
+  line-height: 36px;
 }
 .secondary-features {
   display: inline-block;
   vertical-align: top;
+  font-family: Roboto;
   font-size: 16px;
   width: 220px;
-  background-color: green;
+  line-height: 22px;
 }
 .index-logo-2 {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 .experience {
+  display: inline-block;
+  vertical-align: top;
   margin-top: 30px;
+}
+.list-features,
+.list-secondary-features {
+  line-height: 30px;
 }
 .customer {
   font-size: 0;
   margin-bottom: 75px;
   text-align: center;
+  border-top: 3px solid #eeeeee;
+  border-bottom: 3px solid #eeeeee;
 }
 .customer-column-1 {
   display: inline-block;
   vertical-align: top;
   width: 196px;
-  margin-right: 100px;
+  margin-right: 130px;
 }
 .customer-column-2 {
   display: inline-block;
   vertical-align: top;
   width: 199px;
-  margin-right: 100px;
+  margin-right: 130px;
 }
 .customer-column-3 {
   display: inline-block;
@@ -187,6 +222,9 @@ ul {
   left: 150px;
   width: 250px;
   height: 240px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 22px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -196,14 +234,16 @@ ul {
 .footer-social {
   display: inline-block;
   vertical-align: top;
+  width: 240px;
   font-size: 16px;
   margin-top: 50px;
 }
 .cooperation {
   display: inline-block;
   vertical-align: top;
-  margin-left: 330px;
-  margin-bottom: 100px;
+  width: 550px;
+  margin-top: 50px;
+  margin-left: 140px;
 }
 .friendship {
   font-size: 36px;
@@ -215,8 +255,14 @@ ul {
 .welcome {
   display: inline-block;
   vertical-align: top;
-  margin-left: 300px;
+  width: 650px;
+  margin-left: 70px;
   margin-bottom: 95px;
+  font-family: "Roboto";
+  font-size: 40;
+  line-height: auto;
+  text-transform: uppercase;
+  text-align: center;
 }
 .cards {
   display: inline-block;
@@ -227,26 +273,33 @@ ul {
 .product-name {
   display: inline-block;
   vertical-align: top;
-  margin-right: 30px;
+  margin-right: 80px;
   margin-bottom: 80px;
+}
+.product-name:nth-child(2n) {
+  margin-right: 0;
 }
 .sort {
   display: inline-block;
   margin-bottom: 30px;
+  font-family: "Roboto";
   font-size: 12px;
+  line-height: 18px;
 }
 .sort a {
   display: inline-block;
   vertical-align: top;
-  margin-right: 45px;
+  margin-left: 50px;
   font-size: 12px;
 }
 .filters {
   display: inline-block;
   vertical-align: top;
-  width: 210px;
+  width: 240px;
   margin-right: 80px;
+  font-family: "Roboto";
   font-size: 0;
+  line-height: 30px;
 }
 .price {
   display: inline-block;
@@ -274,10 +327,10 @@ ul {
 }
 .pagination {
   font-size: 0;
-  margin-bottom: 100px;
-  margin-left: 300px;
   display: inline-block;
   min-width: 285px;
+  margin-bottom: 100px;
+  margin-left: 300px;
 }
 .pagination a {
   font-size: 12px;
@@ -286,7 +339,7 @@ ul {
   width: 25px;
   height: 25px;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   color: black;
 }
 .pagination .next {
@@ -295,13 +348,16 @@ ul {
 .btn {
   display: inline-block;
   vertical-align: top;
+  font-family: "Roboto";
   font-size: 12px;
   line-height: 18px;
+  text-transform: uppercase;
   color: white;
   text-align: center;
   padding-top: 10px;
   height: 28px;
   text-decoration: none;
+  background-color: #fb565a;
 }
 .btn-order {
   width: 140px;
@@ -312,6 +368,14 @@ ul {
 .btn-write-to-us {
   width: 240px;
 }
+.btn-show {
+  width: 160px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #f1f1f1;
+  color: #000000;
+}
 .studio-name {
   font-size: 16px;
   line-height: 30px;
@@ -321,24 +385,43 @@ ul {
   line-height: 20px;
 }
 .sprite {
-    background-image: url(img/sprite.png);
+    background-image: url("img/sprite.png");
     background-repeat: no-repeat;
     display: block;
 }
+
+.sprite-icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
+}
+
 .sprite-icon-facebook {
     width: 12px;
     height: 22px;
-    background-position: -30px -30px;
+    background-position: -10px -45px;
 }
+
 .sprite-icon-inst {
     width: 21px;
     height: 21px;
-    background-position: -30px -112px;
+    background-position: -10px -87px;
 }
+
 .sprite-icon-vk {
     width: 26px;
     height: 15px;
-    background-position: -30px -193px;
+    background-position: -10px -128px;
+}
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background-color: #e1e1e1;
+  position: relative;
+  border-radius: 30px; 
 }
 .social-btn::before {
   content: "";
@@ -348,20 +431,35 @@ ul {
   transform: translate(-50% -50%);
   background-image: url("img/sprite.png");
   background-repeat: no-repeat;
-  background-color: #e1e1e1;
 }
 .social-btn-vk::before {
     width: 26px;
     height: 15px;
-    background-position: -30px -193px;
+    background-position: -10px -128px;
 }
-.social-btn-f::before {
+.social-btn-fb {
     width: 12px;
     height: 22px;
-    background-position: -30px -30px;
+    background-position: -10px -45px;
 }
-.social-btn-inst::before {
+.social-btn-inst {
     width: 21px;
     height: 21px;
-    background-position: -30px -112px;
+    background-position: -10px -87px;
+}
+.icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
+}
+
+.features-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fb565a;
+  margin-left: -42px;
+  margin-top: 12px;
 }
