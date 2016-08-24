@@ -100,12 +100,9 @@ ul {
 .user-block a {
   text-decoration: none;
 }
- {
-  display: inline-block;
-  vertical-align: middle;
-  background: transparent url("img/icon-basket.png") no-repeat;
-  width: 15px;
-  height: 15px;
+.basket {
+  background-color: #eeeeee;
+  margin-right: 15px;
 }
 .credo {
   display: inline-block;
@@ -147,7 +144,7 @@ ul {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
-  margin-bottom: 130px;
+  margin-bottom: 30px;
 }
 .main-features {
   display: inline-block;
@@ -185,6 +182,17 @@ ul {
 .list-features,
 .list-secondary-features {
   line-height: 30px;
+  margin-left: 40px;
+}
+.features-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fb565a;
+  margin-left: -42px;
+  margin-top: 12px;
 }
 .customer {
   font-size: 0;
@@ -192,22 +200,23 @@ ul {
   text-align: center;
   border-top: 3px solid #eeeeee;
   border-bottom: 3px solid #eeeeee;
+  padding: 50px 0;
 }
 .customer-column-1 {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 196px;
   margin-right: 130px;
 }
 .customer-column-2 {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 199px;
   margin-right: 130px;
 }
 .customer-column-3 {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 209px;
   margin-right: 0;
 }
@@ -218,8 +227,8 @@ ul {
 }
 .contacts {
   position: absolute;
-  top: 1795px;
-  left: 150px;
+  top: 1860px;
+  left: 200px;
   width: 250px;
   height: 240px;
   font-family: Roboto;
@@ -279,6 +288,15 @@ ul {
 .product-name:nth-child(2n) {
   margin-right: 0;
 }
+.product-name::before {
+    position: absolute;
+    font-size: 0;
+    content: "";
+    width: 240px;
+    height: 30px;
+    background-color: #f1f1f1;
+    border: 0;
+}
 .sort {
   display: inline-block;
   margin-bottom: 30px;
@@ -290,7 +308,8 @@ ul {
   display: inline-block;
   vertical-align: top;
   margin-left: 50px;
-  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px dotted #00ca74;
 }
 .filters {
   display: inline-block;
@@ -301,10 +320,83 @@ ul {
   font-size: 0;
   line-height: 30px;
 }
-.price {
-  display: inline-block;
-  vertical-align: top;
+.filters h3 {
+  text-transform: uppercase;
+}
+.range-filter {
+  width: 240px;
+  margin: 50px auto; /* для демонстрации */
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
   font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
 }
 .mesh {
   display: inline-block;
@@ -330,7 +422,7 @@ ul {
   display: inline-block;
   min-width: 285px;
   margin-bottom: 100px;
-  margin-left: 300px;
+  margin-left: 330px;
 }
 .pagination a {
   font-size: 12px;
@@ -358,6 +450,7 @@ ul {
   height: 28px;
   text-decoration: none;
   background-color: #fb565a;
+  border-radius: 5px;
 }
 .btn-order {
   width: 140px;
@@ -452,14 +545,126 @@ ul {
     height: 15px;
     background-position: -10px -10px;
 }
-
-.features-item::before {
-  position: absolute;
+.modal-content {
+    visibility: hidden;
+    position: absolute;
+    top: 1600px;
+    left: 40%;
+    width: 490px;
+    min-height: 300px;
+    padding: 60px 90px 50px 80px;
+    color: #000000;
+    background-color: #ffffff;
+    margin-left: -230px;
+    box-shadow:
+        5px 0 30px #949494,
+        0 20px 10px #949494,
+        0 -20px 30px #949494,
+        0 20px 30px #949494;
+}
+.modal-content-catalog {
+    visibility: hidden;
+    position: absolute;
+    top: 250px;
+    left: 35%;
+    width: 490px;
+    min-height: 300px;
+    padding: 60px 90px 50px 80px;
+    color: #000000;
+    background-color: #ffffff;
+    margin-left: -230px;
+    box-shadow:
+        5px 0 30px #949494,
+        0 20px 10px #949494,
+        0 -20px 30px #949494,
+        0 20px 30px #949494;
+}
+.modal-content-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #fb565a;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.modal-content-close::before,
+.modal-content-close::after {
   content: "";
-  display: block;
-  width: 25px;
-  height: 3px;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  top: 45%;
+  left: 20%;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+.modal-content-name,
+.modal-content-email {
+  width: 220px;
+  min-height: 30px;
+}
+.modal-content-title-1,
+.modal-content-title-2,
+.modal-content-title-3 {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.modal-content-name,
+.modal-content-email,
+.modal-content-message {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  border-color: #d7dcde;
+  border-radius: 5px;
+  padding: 2px 0 5px 2px;
+}
+.modal-content-name {
+  margin-right: 20px;
+}
+.modal-content-title-1 {
+  padding-right: 165px;
+  padding-bottom: 15px;
+}
+.modal-content-title-2 {
+  padding-bottom: 15px;
+}
+.modal-content-title-3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.modal-content-message {
+  width: 460px;
+  min-height: 115px;
+  text-align: top;
+}
+.modal-content-send {
+  width: 460px;
+  min-height: 40px;
   background-color: #fb565a;
-  margin-left: -42px;
-  margin-top: 12px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
 }

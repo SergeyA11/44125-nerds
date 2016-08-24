@@ -32,6 +32,7 @@
             </nav>
             <span class="icon-basket"></span>
             <div class="user-block">
+              <span class="basket"><img src="img/icon-basket.png" alt="Корзина"></span>
               <a class="login" href="#">корзина</a>
             </div>
           </div>
@@ -132,5 +133,19 @@
          </section>
         </div>
       </footer>
+      <div class="modal-content">
+        <button type="button" class="modal-content-close" title="закрыть">закрыть</button>
+        <form class="feedback-form" action="#" method="post">
+            <label for="who"><span class="modal-content-title-1">Ваше имя:</span></label>
+            <label for="email"><span class="modal-content-title-2">Ваш e-mail:     </span></label>
+            <input id="who" class="modal-content-name" type="text" name="who" placeholder="представьтесь, пожалуйста">
+          
+            <input id="email" class="modal-content-email" type="text" name="email" placeholder="для отправки ответа">
+            <label for="message"> <span class="modal-content-title-3">Текст письма:</span></label>
+            <input id="message" class="modal-content-message" type="text" name="text" placeholder="в свободной форме">
+            </textarea>
+          <button type="button" class="modal-content-send" title="отправить">отправить</button>
+        </form>
+      </div>
     </body>
   </html>

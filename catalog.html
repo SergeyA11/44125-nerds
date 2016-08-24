@@ -42,11 +42,20 @@
     <main class="main-content">
       <div class="container">
       <section class="filters"> 
-        <form action="#"  method="post">
-          <section class="price">
+        <form action="#"  method="get">
+          <section class="range-filter">
             <h3 class="third-title">стоимость:</h3>
-            <input type="range" min="0" max="15000" step="1">
-            <output name="sum"></output>
+            <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            
           </section>
           <section class="mesh">
             <h3 class="third-title">сетка:</h3>
@@ -158,5 +167,19 @@
          </section>
         </div>
       </footer>
+      <div class="modal-content-catalog">
+        <button type="button" class="modal-content-close" title="закрыть">закрыть</button>
+        <form class="feedback-form" action="#" method="post">
+            <label for="who"><span class="modal-content-title-1">Ваше имя:</span></label>
+            <label for="email"><span class="modal-content-title-2">Ваш e-mail:     </span></label>
+            <input id="who" class="modal-content-name" type="text" name="who" placeholder="представьтесь, пожалуйста">
+          
+            <input id="email" class="modal-content-email" type="text" name="email" placeholder="для отправки ответа">
+            <label for="message"> <span class="modal-content-title-3">Текст письма:</span></label>
+            <input id="message" class="modal-content-message" type="text" name="text" placeholder="в свободной форме">
+            </textarea>
+          <button type="button" class="modal-content-send" title="отправить">отправить</button>
+        </form>
+      </div>
   </body>
 </html>
