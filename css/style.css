@@ -85,6 +85,7 @@ ul {
 }
 .main-navigation ul li a {
   text-decoration: none;
+  color: #000000;
 }
 .main-navigation ul li a:hover {
   color: #fb565a;
@@ -94,6 +95,9 @@ ul {
 }
 .main-navigation ul li:last-child {
   margin-right: 0;
+}
+.onpage {
+  border-bottom: 3px solid #fb565a;
 }
 .user-block {
   display: inline-block;
@@ -280,13 +284,25 @@ ul {
   background-image: url("../img/index-customers-3-active.png");
 }
 .map {
+  position: relative;
   display: inline-block;
   background-image: url("img/index-catalog-map.jpg");
   width: 100%;
 }
 .contacts {
   position: absolute;
-  top: 1910px;
+  top: 2170px;
+  left: 180px;
+  width: 250px;
+  height: 240px;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.contacts-catalog {
+  position: absolute;
+  top: 1900px;
   left: 90px;
   width: 250px;
   height: 240px;
@@ -602,6 +618,23 @@ ul {
   font-size: 16px;
   margin-bottom: 70px;
 }
+.filters .mesh input {
+  display: none;
+}
+.mesh-input {
+  display: inline-block;
+  background-image: url("../img/icon-circle.png");
+  background-repeat: no-repeat;
+  background-position: -20px;
+}
+.mesh-input-hover:hover {
+  background-image: url("../img/icon-circle-hover.png");
+  background-repeat: no-repeat;
+}
+.mesh-input-block {
+  background-image: url("../img/icon-circle-block.png");
+  background-repeat: no-repeat;
+}
 .pagination {
   font-size: 0;
   display: inline-block;
@@ -616,9 +649,11 @@ ul {
   margin-right: 10px;
   width: 25px;
   height: 25px;
+  line-height: 25px;
   padding: 15px;
   background-color: #f1f1f1;
   color: black;
+  border: 3px solid transparent;
 }
 .pagination .next {
   width: 145px;
@@ -687,6 +722,7 @@ ul {
   width: 160px;
   font-size: 12px;
   line-height: 18px;
+  font-weight: bold;
   background-color: #f1f1f1;
   color: #000000;
 }

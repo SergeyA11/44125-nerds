@@ -16,16 +16,16 @@
             </div>
             <nav class="main-navigation">
               <ul class="list">
-                <li>
+                <li class="onpage">
                   <a href="#">студия</a>
                 </li>
-                <li>
+                <li class="onpage">
                   <a href="#">клиенты</a>
                 </li>
-                <li>
+                <li class="onpage">
                   <a href="#">магазин</a>
                 </li>
-                <li>
+                <li class="onpage">
                   <a href="#">контакты</a>
                 </li>
               </ul>
@@ -48,7 +48,7 @@
             <h3 class="third-title">стоимость:</h3>
             <div class="range-controls">
           <div class="scale">
-            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            <div class="bar" style="margin-left: 5%; width: 60%"></div>
           </div>
           <div class="toggle toggle-min"></div>
           <div class="toggle toggle-max"></div>
@@ -56,13 +56,12 @@
         <div class="price-controls">
           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
           <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-            
           </section>
           <section class="mesh">
             <h3 class="third-title">сетка:</h3>
               <ul> 
                 <li>
-                  <label for="adapt">
+                  <label class="mesh-input mesh-input-hover mesh-input-block" for="adapt">
                     <input id="adapt" type="radio" name="mesh-type" value="adapt" checked> Адаптивная
                   </label>
                 </li>
@@ -158,10 +157,11 @@
         <section class="map">
               <img src="img/index-catalog-map.jpg" width="100%" height="416" alt="Офис дизайн-студии Nёrd's">
           </section>
-          <section class="contacts">
-            <p>NERDS DESIGN STUDIO<br>
-                191186,Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                Телефон: +7 (812) 275-75-75</p>
+          <section class="contacts-catalog">
+           <p> <span class="studio-name">NERDS DESIGN STUDIO</span>
+                <span class="address">191186,Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</span><br>
+                  <span class="tel">тел. +7 (812) 275-75-75</span>
+            </p>
             <a href="#" class="btn btn-write-to-us">Напишите нам</a>
           </section>
       </main>
