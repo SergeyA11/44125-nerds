@@ -31,8 +31,10 @@
               </ul>
             </nav>
             <div class="user-block">
-              <span class="basket"></span>
-              <a class="login" href="#">корзина</a>
+              <span class="onpage">
+                <span class="basket"></span>
+                <a class="login" href="#">корзина</a>
+              </span>
             </div>
           </div>
           <div class="line-2">
@@ -61,19 +63,16 @@
             <h3 class="third-title">сетка:</h3>
               <ul> 
                 <li>
-                  <label class="mesh-input mesh-input-hover mesh-input-block" for="adapt">
-                    <input id="adapt" type="radio" name="mesh-type" value="adapt" checked> Адаптивная
-                  </label>
+                  <input class="radio-input" id="adapt" type="radio" name="mesh-type" value="adapt" checked>
+                  <label class="mesh-input" for="adapt">Адаптивная</label>
                 </li>
                 <li>
-                  <label for="fix">
-                    <input id="fix" type="radio" name="mesh-type" value="fix" >Фиксированная
-                  </label>
+                  <input  class="radio-input" id="fix" type="radio" name="mesh-type" value="fix">
+                  <label class="mesh-input" for="fix">Фиксированная</label>
                 </li>
                 <li>
-                  <label for="rubber">
-                    <input id="rubber" type="radio" name="mesh-type" value="rubber"> Резиновая
-                  </label>
+                  <input class="radio-input" id="rubber" type="radio" name="mesh-type" value="rubber" disabled>
+                  <label class="mesh-input" for="rubber">Резиновая</label>
                 </li>
               </ul>
             </section>
@@ -81,29 +80,24 @@
               <h3 class="third-title">особенности:</h3>
               <ul>
                 <li>
-                  <label for="slider">
-                    <input id="slider" type="checkbox" name="slider" checked>Слайдер
-                  </label>
+                  <input class="checkbox-input" id="slider" type="checkbox" name="slider" checked>
+                  <label class="addition-input" for="slider">Слайдер</label>
                 </li>
                 <li>
-                  <label for="advantages">
-                    <input id="advantages" type="checkbox" name="advantages"  >Блок преимуществ
-                  </label>
+                  <input class="checkbox-input" id="advantages" type="checkbox" name="advantages"  >
+                  <label class="addition-input" for="advantages">Блок преимуществ</label>
                 </li>
                 <li>
-                  <label for="news">
-                    <input id="news" type="checkbox" name="news" checked>Новости
-                  </label>
+                    <input class="checkbox-input" id="news" type="checkbox" name="news" checked>
+                    <label class="addition-input" for="news">Новости</label>
                 </li>
                 <li>
-                  <label for="gallery">
-                    <input id="gallery" type="checkbox" name="gallery">Галерея
-                  </label>
+                  <input class="checkbox-input" id="gallery" type="checkbox" name="gallery">
+                  <label class="addition-input" for="gallery">Галерея</label>
                 </li>
                 <li>
-                  <label for="basket">
-                    <input id="basket" type="checkbox" name="basket">Корзина
-                  </label>
+                  <input class="checkbox-input" id="basket" type="checkbox" name="basket">
+                  <label class="addition-input" for="basket">Корзина</label>
                 </li>
               </ul>
             </section>
