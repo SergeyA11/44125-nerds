@@ -1188,11 +1188,12 @@ label.addition-input::before {
         -5px 0px 20px #949494,
         0px -5px 10px #949494,
         0px 30px 30px #949494;
+  font-family
 }
 .modal-content-catalog {
     visibility: hidden;
     position: fixed;
-    top: 275px;
+    top: 50px;
     left: calc(50% - 328px);
     width: 490px;
     height: 315px;
